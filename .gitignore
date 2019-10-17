@@ -1,0 +1,2 @@
+./mosquitto-1.6.7/src/*.o
+./mosquitto-1.6.7/client/*.o
