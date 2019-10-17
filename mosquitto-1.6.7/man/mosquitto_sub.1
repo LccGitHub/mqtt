@@ -1,13 +1,13 @@
 '\" t
 .\"     Title: mosquitto_sub
 .\"    Author: [see the "Author" section]
-.\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 09/25/2019
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 10/17/2019
 .\"    Manual: Commands
 .\"    Source: Mosquitto Project
 .\"  Language: English
 .\"
-.TH "MOSQUITTO_SUB" "1" "09/25/2019" "Mosquitto Project" "Commands"
+.TH "MOSQUITTO_SUB" "1" "10/17/2019" "Mosquitto Project" "Commands"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -1193,8 +1193,7 @@ Subscribe to all broker status messages:
 .IP \(bu 2.3
 .\}
 mosquitto_sub
-\-v
-\-t
+\-v\-t
 \e$SYS/#
 .RE
 .PP
@@ -1209,8 +1208,7 @@ Specify the output format as "ISO\-8601 date : topic : payload in hex"
 .IP \(bu 2.3
 .\}
 mosquitto_sub
-\-F \*(Aq@Y\-@m\-@dT@H:@M:@S@z : %t : %x\*(Aq
-\-t
+\-F \*(Aq@Y\-@m\-@dT@H:@M:@S@z : %t : %x\*(Aq\-t
 \*(Aq#\*(Aq
 .RE
 .PP
@@ -1225,9 +1223,7 @@ Specify the output format as "seconds since epoch\&.nanoseconds : retained flag 
 .IP \(bu 2.3
 .\}
 mosquitto_sub
-\-F \*(Aq%@s\&.@N : %r : %q : %m : %l\*(Aq
-\-q 2
-\-t
+\-F \*(Aq%@s\&.@N : %r : %q : %m : %l\*(Aq\-q 2\-t
 \*(Aq#\*(Aq
 .RE
 .PP
@@ -1242,9 +1238,7 @@ Topic and payload output, but with colour where supported\&.
 .IP \(bu 2.3
 .\}
 mosquitto_sub
-\-F \*(Aq\ee[92m%t \ee[96m%p\ee[0m\*(Aq
-\-q 2
-\-t
+\-F \*(Aq\ee[92m%t \ee[96m%p\ee[0m\*(Aq\-q 2\-t
 \*(Aq#\*(Aq
 .RE
 .SH "FILES"
